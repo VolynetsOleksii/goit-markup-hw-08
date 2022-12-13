@@ -1,0 +1,30 @@
+.our-activities {
+  padding-top: 0;
+  display: none;
+  @include desktop {
+   display: block;
+  }
+}
+.our-activities__section-title {
+  margin-bottom: 50px;
+}
+.activity-list__item {
+  position: relative;
+  width: 370px;
+  height: 294px;
+}
+.activity-list__description {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--secondary-text-color);
+}
