@@ -79,11 +79,6 @@ textarea {
   padding-right: 15px;
   margin: 0 auto;
 }
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -238,6 +233,7 @@ textarea {
 }
 
 .page-header__container {
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -311,8 +307,8 @@ textarea {
   }
 }
 
-.mob-nav {
-  margin-bottom: 302px;
+.page-header__mob-nav {
+  margin-bottom: auto;
 }
 
 .mob-nav__item:not(:last-child) {
@@ -337,10 +333,15 @@ textarea {
 
 .mob-contacts__tel-link {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 26px;
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-contacts__tel-link {
+    font-size: 34px;
+  }
 }
 .mob-contacts__tel-link:hover, .mob-contacts__tel-link:focus {
   color: var(--accent-color);
@@ -377,10 +378,15 @@ textarea {
 
 .mob-social_link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-social_link {
+    font-size: 18px;
+  }
 }
 
 .current {
@@ -466,10 +472,15 @@ textarea {
   color: var(--secondary-text-color);
   max-width: 360px;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -808,8 +819,6 @@ textarea {
 .wrap {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -825,7 +834,7 @@ textarea {
 }
 
 .send__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -835,6 +844,11 @@ textarea {
   border-radius: 4px;
   color: var(--primary-text-color);
   background-color: transparent;
+}
+@media screen and (min-width: 480px) {
+  .send__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .send__input {
@@ -885,13 +899,18 @@ textarea {
 
 .modal {
   position: absolute;
-  width: 450px;
+  width: 100%;
   min-height: 609px;
   background-color: var(--primary-background-color);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -945,13 +964,18 @@ textarea {
 }
 
 .mod-input {
-  width: 370px;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   background-color: transparent;
   padding-left: 42px;
   outline: transparent;
   transition: border-color var(--transformation), fill var(--transformation);
+}
+@media screen and (min-width: 480px) {
+  .mod-input {
+    width: 370px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .mod-input {
@@ -1022,9 +1046,14 @@ textarea {
 
 .label-policy {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 7px;
   line-height: 1.1666666667;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 480px) {
+  .label-policy {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .label-policy {

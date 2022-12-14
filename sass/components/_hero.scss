@@ -34,10 +34,13 @@
   color: var(--secondary-text-color);
   max-width: 360px;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 20px;
   line-height: calc(42 / 26);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  @include mobile {
+    font-size: 26px;
+  }
   @include desktop {
     max-width: 696px;
   }

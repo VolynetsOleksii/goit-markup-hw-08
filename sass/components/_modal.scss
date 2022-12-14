@@ -8,13 +8,16 @@
 }
 .modal {
   position: absolute;
-  width: 450px;
+  width: 100%;
   min-height: 609px;
   background-color: var(--primary-background-color);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
+  @include mobile {
+    width: 450px; 
+  }
   @include desktop {
     width: 528px;
     height: 581px;
@@ -61,13 +64,16 @@
   }
 }
 .mod-input {
-  width: 370px;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   background-color: transparent;
   padding-left: 42px;
   outline: transparent;
   transition: border-color var(--transformation), fill var(--transformation);
+  @include mobile {
+    width: 370px; 
+  }
   @include desktop {
     width: 448px;
   }
@@ -118,9 +124,12 @@
 }
 .label-policy {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 7px;
   line-height: calc(14 / 12);
   color: var(--primary-text-color);
+  @include mobile {
+    font-size: 12px;
+  }
   @include desktop {
     font-size: 14px;
     line-height: calc(24 / 14);
